@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#ed5a2f"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_header_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:text="NearBy users"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="92">
+
+
+        <ListView
+            android:id="@+id/lv_nearBy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+
+        <com.skyfishjy.library.RippleBackground
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            app:rb_color="#ed5a2f"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="3000"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:rb_scale="6">
+
+
+
+
+
+        </com.skyfishjy.library.RippleBackground>
+
+        <ImageView
+            android:id="@+id/icon_sample"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_sample"/>
+
+
+
+    </FrameLayout>
+</LinearLayout>

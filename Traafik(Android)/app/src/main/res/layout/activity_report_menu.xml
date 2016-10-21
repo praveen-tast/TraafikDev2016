@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#70726F">
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dip"
+            android:text="REPORT"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="93"
+        android:background="#515151"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/ll_police"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:background="#fd5722"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:src="@drawable/icon_police" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Pothole"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#70726F"></LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_goslow"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_go_slow" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Go-Slow"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_accident"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_acident" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Accident"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_hazard"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_hazard" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Hazard"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_place"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_place" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Place"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_road_closed"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_road_closed" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Road Closed"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_check_in" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Check-In"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_traafik_feed"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_traffik_feed" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Traafik Feed"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_traafic_chat"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_trafick_chat" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Traafik Chat"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

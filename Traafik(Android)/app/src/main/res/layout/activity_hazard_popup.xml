@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:checkbox="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="25dip"
+    android:background="@drawable/shape"
+    android:orientation="vertical">
+
+
+
+    <com.rey.material.widget.RadioButton
+        android:id="@+id/OnRoad"
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        checkbox:rbd_strokeColor="#fb5722"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="On Road"/>
+
+    <com.rey.material.widget.RadioButton
+        android:id="@+id/OffRoad"
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        checkbox:rbd_strokeColor="#fb5722"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Off Road"/>
+
+
+    <com.rey.material.widget.RadioButton
+        android:id="@+id/Weather"
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        checkbox:rbd_strokeColor="#fb5722"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Weather"/>
+
+    <Button
+        android:id="@+id/selectHazard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:paddingLeft="10dip"
+        android:gravity="center"
+        android:backgroundTint="#ffffff"
+        android:background="#ffffff"
+        android:textColor="#fb5722"
+        android:shadowColor="#d3d3d3"
+        android:shadowRadius="15"
+        android:text=" Please select one to continue  "
+        />
+
+</LinearLayout>

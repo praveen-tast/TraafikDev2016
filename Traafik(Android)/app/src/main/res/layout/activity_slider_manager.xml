@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="#515151"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:src="@drawable/sidebar_pic" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"></LinearLayout>
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/profile_name_slider"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom|center"
+                android:layout_weight="20"
+                android:paddingLeft="10dip"
+                android:text="Akin Ambode"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/profile_post_slider"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:paddingLeft="10dip"
+                android:text="Manager"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/ll_navigate"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/nvgt" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/tv_navigation_slider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Navigate"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_traafik"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/trfk" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/tv_mytraafik_slider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="My Traafik"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_inbox"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_inbox" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/tv_inbox_slider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="inbox"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_send"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_statistcis" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/tv_send_slider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Send"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_setting" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/tv_setting_slider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Setting"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sounds"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_sounds" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/tv_sound_slider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Sounds"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_advertise"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_advertise" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/tv_friend_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Friends Location"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_share_location"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"></LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="8"
+                android:src="@drawable/icon_advertise" />
+
+            <com.tuffgeekers.utils.AutoResizeTextView
+                android:id="@+id/tv_share_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="80"
+                android:gravity="center_vertical"
+                android:paddingLeft="45dip"
+                android:text="Share My Location"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="20dip"></LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_logout" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

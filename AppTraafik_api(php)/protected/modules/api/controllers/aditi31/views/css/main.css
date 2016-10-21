@@ -1,0 +1,168 @@
+*{margin:0; padding:0}
+body{margin:0; padding:0; background:none !important;}
+.navbar.navbar-default.navbar-inverse.navbar-fixed-top {
+    height: 70px;
+}
+.logo {
+    color: #fff !important;
+    left: 120px;
+    position: fixed;
+    top: 14px;
+	font-size:25px;
+}
+.nav.navbar-nav.navbar-right {
+    color: #fff !important;
+    font-size: 16px;
+    position: absolute;
+    right: 32px;
+    top: 12px;
+}
+.table_headers {
+    background: #ddd none repeat scroll 0 0;
+    color: #00c7bb;
+    font-size: 16px;
+    list-style: outside none none;
+    margin-top: 70px;
+    padding: 15px 30px;
+    text-align: left;
+}
+table {
+    color: black !important;
+}
+.table_data {
+    background-color: #fff5d8;
+    margin-top: 70px;
+}
+
+
+.panel-body{
+	background:#fff;
+	color:#333;
+	padding:30px;
+	position: relative;
+}
+
+.nav.nav-tabs {
+    background: #eeeeee none repeat scroll 0 0;
+}
+
+.nav.nav-tabs a {
+    color: #333333 !important;
+    padding: 20px 15px;
+}
+
+.nav.nav-tabs li.active > a{
+	background:#eee;
+	color:#000;
+	font-weight:bold;
+	border:none;
+}
+
+.nav.nav-tabs .active > a::before {
+    bottom: -29px;
+    color: #ffffff;
+    content: "";
+    font-family: FontAwesome;
+    font-size: 50px;
+    left: 35%;
+    position: absolute;
+    text-shadow: 0 -1px 0 #cecece;
+}
+
+.tab-content {
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+.tab-content .btn{
+    font-size: 14px;
+    padding: 5px 30px;	
+}
+.tab-content .btn-danger {
+    background: #d3375f none repeat scroll 0 0;
+}
+
+.tabs-main {
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.tab-pane {
+    padding: 30px 0;
+}
+
+td .panel-collapse {
+    margin-top: 20px;
+    position: absolute;
+}
+
+.cmpny{
+	padding:10px 5px !important ;
+	position:relative
+}
+
+.cmpny form {
+    background: #cccccc none repeat scroll 0 0;
+	bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 6px;
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    width: 280px;
+	z-index:-10;
+}
+
+.cmpny:hover form{
+	opacity: 1;
+    bottom: -50px;
+	z-index:10;
+}
+
+.btn-close {
+    background: red none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block !important;
+    font-size: 25px;
+    height: 40px;
+    line-height: 38px;
+    position: absolute;
+    right: 50px;
+    text-align: center;
+    top: 40px;
+    width: 40px;
+	opacity:1;
+	transition:.25s all;
+}
+
+
+
+.btn-close:hover{
+	cursor:pointer;
+	color:#fff;
+	opacity:.9;
+}
+.cmpny .fa.fa-search {
+    color: #c0c0c8;
+    font-size: 20px;
+    position: absolute;
+    right: 18px;
+    top: 15px;
+}
+.cmpny .fa.fa-search:hover
+{
+	cursor:pointer;
+}
+.active_row
+{
+	 background: #fff ;
+}
+footer {
+    background: #000 none repeat scroll 0 0;
+    padding: 50px 0;
+}
+#content_info {
+    margin-bottom: -20px;
+}

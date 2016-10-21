@@ -1,0 +1,319 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #555555;
+	font: 10pt Arial,Helvetica,sans-serif;
+	background: none repeat scroll 0 0 #EFEFEF;
+}
+
+#page {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: none repeat scroll 0 0 white;
+	border: 1px solid #C9E0ED;
+}
+
+#header {
+	margin: 0;
+	padding: 0;
+	border-top: 3px solid #C9E0ED;
+}
+
+#content {
+	padding: 10px;
+	min-height: 450px;
+	
+}
+
+#sidebar {
+	padding: 10px;
+}
+
+#footer {
+	padding: 10px;
+	margin: 10px 20px;
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+	margin-top: 40px;
+}
+
+#logo {
+	padding: 10px 20px;
+	font-size: 200%;
+	font-weight: bold;
+	color: #6688FF;
+	text-shadow: 2px 1px #000000;
+}
+
+#slogan {
+	font-size: 120%;
+font-weight: bold;
+	float: right;
+	display: block;
+	padding: 5px;
+	color: #FFFFFF;
+}
+
+.shadowbox {
+	padding: 10px;
+	background: none repeat scroll 0 0 #eeeeee;
+	box-shadow: 1px 2px 5px #000000;
+	border: 1px solid #333333;
+	border-radius: 10px ;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#mainmenu {
+	background: url("bg.gif") repeat-x scroll left top white;
+}
+
+#mainmenu ul {
+	padding: 6px 20px 5px;
+	margin: 0;
+}
+
+#mainmenu ul li {
+	display: inline;
+}
+
+#mainmenu ul li a {
+	color: #FFFFFF;
+	background-color: transparent;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px 8px;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a {
+	color: #6399CD;
+	background-color: #EFF4FA;
+	text-decoration: none;
+}
+
+div.flash-error, div.flash-notice, div.flash-success {
+	padding: 0.8em;
+	margin-bottom: 1em;
+	border: 2px solid #DDDDDD;
+}
+
+div.flash-error {
+	background: none repeat scroll 0 0 #FBE3E4;
+	color: #8A1F11;
+	border-color: #FBC2C4;
+}
+
+div.flash-notice {
+	background: none repeat scroll 0 0 #FFF6BF;
+	color: #514721;
+	border-color: #FFD324;
+}
+
+div.flash-success {
+	background: none repeat scroll 0 0 #E6EFC2;
+	color: #264409;
+	border-color: #C6D880;
+}
+
+div.flash-error a {
+	color: #8A1F11;
+}
+
+div.flash-notice a {
+	color: #514721;
+}
+
+div.flash-success a {
+	color: #264409;
+}
+
+div.form .rememberMe label {
+	display: inline;
+}
+
+div.view {
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #C9E0ED;
+}
+
+div.breadcrumbs {
+	font-size: 0.9em;
+	padding: 5px 20px;
+}
+
+div.breadcrumbs span {
+	font-weight: bold;
+}
+
+.portlet {
+	border: 1px solid #C9E0ED;
+}
+
+.portlet-decoration {
+	padding: 3px 8px;
+	background: none repeat scroll 0 0 #B7D6E7;
+	border-left: 5px solid #6FACCF;
+	border-right: 5px solid #6FACCF;
+}
+
+.portlet-title {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: #000000;
+}
+
+.portlet-content {
+	font-size: 0.9em;
+	margin: 0 0 15px;
+	padding: 5px 8px;
+}
+
+.portlet-content ul {
+	margin: 0;
+	padding: 0 0 0 10px;
+	list-style: square outside none;
+}
+
+.portlet-content li {
+	padding: 2px 0 4px;
+	list-style-image: url("../images/li_icon.jpg");
+}
+
+.post {
+	margin: 0 0 20px;
+}
+
+.post .title {
+	font-size: 1.5em;
+	border-bottom: 1px solid #C9E0ED;
+}
+
+.post .title a {
+	text-decoration: none;
+	color: #5566FF;
+}
+
+.post .author {
+	color: #888888;
+	margin: 0 0 5px;
+	font-size: 0.8em;
+}
+
+.post .nav {
+	padding: 5px;
+	background: none repeat scroll 0 0 #EEEEEE;
+	border-radius: 7px 7px 7px 7px;
+	font-size: 0.8em;
+}
+
+.comment {
+	background: none repeat scroll 0 0 #F5F5F5;
+	margin: 5px 0;
+	padding: 5px;
+	border-radius: 4px 4px 4px 4px;
+	border: 1px solid #DDDDDD;
+}
+
+.comment .content {
+	margin: 5px 0;
+}
+
+.comment .author {
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.comment .time {
+	color: #888888;
+	font-size: 0.8em;
+	text-align: right;
+}
+
+.comment a.cid {
+	float: right;
+	font-weight: bold;
+	padding: 0 5px 5px;
+	text-decoration: none;
+	color: #8888FF;
+}
+
+.comment a.cid:hover {
+	color: #555555;
+}
+
+.comment .pending {
+	color: red;
+}
+.span2 .well
+{
+	padding:1px;
+}
+
+.heading_box {
+	background-color: #FFFFFF;
+	background-image: url("../images/dotted_line_patten.png");
+	border: 2px solid #3480AD;
+	border-radius: 10px 10px 10px 10px;
+	display: block;
+	padding: 10px 30px 0 5px;
+	position: relative;
+}
+
+.heading-blue {
+	color: #2C6F9F;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: normal;
+}
+
+.text-blue {
+	color: #2C6F9F;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: normal;
+}
+
+#chat {
+	background-color: white;
+	height: 200px;
+	margin: 20px;
+	overflow-y: scroll;
+	width: 90%;
+	border: thin solid black;
+	padding: 10px 10px 5px;
+	border-color: #bbb;
+}
+
+#chat1 {
+	background-color: white;
+	width: 90%;
+	border: thin solid black;
+	padding-left: 40px;
+	border-color: #bbb;
+}
+
+.titlecommand {
+	font-size: 14px;
+	font-weight: bold;
+	background-color: gray;
+	color: white;
+	padding: 10px 0 10px 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.highlight {
+	color: white;
+	font-size: 14px;
+	background-color: gray;
+	font-weight: bold;
+	margin-left: 25px;
+	padding: 5px;
+}
+

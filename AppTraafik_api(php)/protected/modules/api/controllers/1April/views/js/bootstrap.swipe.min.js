@@ -1,0 +1,1 @@
+$(function(){function a(a){b&&(a.stopPropagation(),a.preventDefault()),b=!1}var b=!1;$(".carousel").each(function(){var a=new Hammer(this);a.on("swipeleft swiperight release",function(c){"swipeleft"===c.type&&(b=!0,$(a.element).carousel("next")),"swiperight"===c.type&&(b=!0,$(a.element).carousel("prev"))})}),$(document).on("click",a)});

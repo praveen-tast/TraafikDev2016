@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#fd5607"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+            <ImageView
+                android:id="@+id/iv_goback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="13dip"
+                android:src="@drawable/left" />
+        </LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_header_goslow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:text="Go Slow"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+        </LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_detail_heading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:background="@drawable/bg_white_lg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="Share Details Here "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_detail_heading_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:background="@drawable/bg_white_lg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="Type Message"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_detail_traffic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:background="@drawable/bg_white_lg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:hint="Enter Details "
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#d3d3d3" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+        </LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:background="@drawable/bg_white_lg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="Select Picture"
+            android:drawableRight="@drawable/arreow_next"
+            android:paddingRight="10dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:src="@drawable/no_preview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"></LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/ll_mySide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:visibility="gone"
+        android:clickable="false"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+        </LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+
+            android:id="@+id/tv_sideText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:clickable="false"
+            android:background="@drawable/bg_white_lg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="My Side"
+            android:drawableRight="@drawable/arreow_next"
+            android:paddingRight="10dip"
+            android:drawablePadding="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.52">
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+        </LinearLayout>
+
+       <ImageView
+           android:id="@+id/btn_later"
+           android:layout_width="0dp"
+           android:layout_weight="40"
+           android:layout_height="match_parent"
+           android:background="#fd5607"
+           android:src="@drawable/later"/>
+        <ImageView
+            android:id="@+id/btn_sendReport"
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:layout_height="match_parent"
+            android:background="#88c442"
+            android:src="@drawable/send"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+        </LinearLayout>
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/ac_loading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:visibility="invisible"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

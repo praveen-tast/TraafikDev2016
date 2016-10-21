@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#ed5a2f"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_header_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:text="Setting"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="93">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_general_head"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="General Setting"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#D6512A" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_setting_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="5"
+                        android:src="@drawable/icon_general" />
+
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_setting_general"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dip"
+                        android:text="Set chat Radius"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_setting_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="5"
+                        android:src="@drawable/icon_social_network" />
+
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_setting_network"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dip"
+                        android:text="Social Networks"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:id="@+id/ll_setting_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="5"
+                        android:src="@drawable/icon_sound" />
+
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_setting_sound"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dip"
+                        android:text="Sounds"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:id="@+id/ll_setting_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="5"
+                        android:src="@drawable/icon_navigation" />
+
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_setting_navigation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dip"
+                        android:text="View Sharing"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:id="@+id/ll_accountLogins"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="5"
+                        android:src="@drawable/icon_accounts_login" />
+
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_setting_notifi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dip"
+                        android:text="Account Logins"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:id="@+id/ll_setting_Notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="5"
+                        android:src="@drawable/icon_notifications" />
+
+                    <com.tuffgeekers.utils.AutoResizeTextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dip"
+                        android:text="Notifications"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:id="@+id/ll_setting_spread"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="5"
+                        android:src="@drawable/icon_spread" />
+
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_setting_spread"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dip"
+                        android:text="Spread The Word"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:id="@+id/ll_setting_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="5"
+                        android:src="@drawable/icon_about" />
+
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_setting_about"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dip"
+                        android:text="About Traafic"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_weight="3"
+                android:background="#D9DDDE"
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+
+               >
+            </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_setting_help"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="Help"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#D6512A" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_setting_use"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_weight="5"
+                        android:src="@drawable/icon_how_to_use" />
+
+                    <com.tuffgeekers.utils.AutoResizeTextView
+                        android:id="@+id/tv_setting_use"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="80"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dip"
+                        android:text="How to use Traafik"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

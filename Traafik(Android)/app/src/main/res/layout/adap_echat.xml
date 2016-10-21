@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/otherSide_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This messgage from other person"
+        android:textColor="#000000"
+        android:layout_gravity="left"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/mySide_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This messgage from me as a user person"
+        android:textColor="#000000"
+        android:layout_gravity="right"
+        android:gravity="right"/>
+
+    </LinearLayout>

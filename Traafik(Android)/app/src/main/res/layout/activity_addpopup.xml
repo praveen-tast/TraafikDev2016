@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="8dip"
+    android:layout_marginBottom="8dip"
+    android:layout_height="330dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="#D6512A"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_header_signIn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:text="Add location to Report"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:padding="2dip"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+        </LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_detail_heading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="95"
+            android:background="@drawable/bg_white_lg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="Share Details Here "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_detail_heading_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:background="@drawable/bg_white_lg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="Type Message"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="11"
+        android:padding="2dip"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_detail_traffic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="95"
+            android:background="@drawable/bg_white_lg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="Enter Details "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#d3d3d3" />
+
+
+    </LinearLayout>
+
+
+
+
+    <Spinner
+        android:padding="5dip"
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_white_lg"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_weight="15"/>
+
+    <Spinner
+        android:padding="5dip"
+        android:id="@+id/spinner2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@drawable/bg_white_lg"
+        android:layout_weight="15"/>
+
+    <Spinner
+        android:padding="5dip"
+        android:id="@+id/spinner3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@drawable/bg_white_lg"
+        android:layout_weight="15"/>
+
+    <LinearLayout
+        android:id="@+id/ll_take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_pic_proceed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:paddingLeft="20dip"
+            android:text="Take Picture and Proceed"
+            android:padding="5dip"
+            android:background="#D6512A"
+            android:layout_margin="1dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

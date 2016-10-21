@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_home_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#fd5722"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+            <ImageView
+                android:id="@+id/side_menu_manager"
+                android:src="@drawable/side_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_header_signIn_manager"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:text="Home"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+            <ImageView
+                android:id="@+id/report_menu_manager"
+                android:src="@drawable/report_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="92">
+
+
+         <fragment
+        android:id="@+id/map_home_manager"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_marker"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/map_icon_manager"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.nightonke.boommenu.BoomMenuButton
+                android:id="@+id/boom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                fab:boom_button_color="#fd5722"
+                fab:boom_inActionBar="false"
+                />
+
+
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/multiple_actions"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                fab:fab_addButtonColorNormal="#fd5722"
+                fab:fab_addButtonColorPressed="#fd5722"
+                fab:fab_addButtonPlusIconColor="#ffffff"
+                fab:fab_labelStyle="@style/menu_labels_style"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/action_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="#fd5722"
+                    fab:fab_icon="@android:drawable/ic_popup_disk_full"
+                    fab:fab_title="Refresh"
+                    fab:fab_colorPressed="@color/white_pressed"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/action_navigate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="#fd5722"
+                    fab:fab_icon="@drawable/ic_map"
+                    fab:fab_title="Navigate"
+                    fab:fab_colorPressed="@color/white_pressed"/>
+
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/action_Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="#fd5722"
+                    fab:fab_icon="@drawable/ic_fab_star"
+                    fab:fab_title="Filter Reports"
+                    fab:fab_colorPressed="@color/white_pressed"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/action_addLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="#fd5722"
+                    fab:fab_title="Add Report"
+                    fab:fab_icon="@android:drawable/ic_menu_compass"
+                    fab:fab_colorPressed="@color/white_pressed"/>
+
+
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+</LinearLayout>

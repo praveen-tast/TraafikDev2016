@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#D6512A"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+            <ImageView
+                android:id="@+id/iv_goback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="13dp"
+                android:src="@drawable/left" />
+        </LinearLayout>
+
+        <com.tuffgeekers.utils.AutoResizeTextView
+            android:id="@+id/tv_header_goslow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:text="Reports"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="93">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_feed_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:background="@drawable/back_feed">
+
+                        <ImageView
+                            android:src="@drawable/allreports"
+                            android:layout_weight="8"
+                            android:layout_marginLeft="20dip"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="80"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dip"
+                            android:text="All"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+                            android:id="@+id/tv_total_display"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_feed_goslow"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:background="@drawable/back_feed">
+
+                        <ImageView
+                            android:src="@drawable/goslow_feed"
+                            android:layout_weight="8"
+                            android:layout_marginLeft="20dip"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="80"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dip"
+                            android:text="Go Slow"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+                            android:id="@+id/tv_total_goSlow"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_feed_police"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:background="@drawable/back_feed">
+
+                        <ImageView
+                            android:src="@drawable/police_feed"
+                            android:layout_weight="8"
+                            android:layout_marginLeft="20dip"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="80"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dip"
+                            android:text="Pothole"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+                            android:id="@+id/tv_total_police"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_feed_Accident"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:background="@drawable/back_feed">
+
+                        <ImageView
+                            android:src="@drawable/accident_feed"
+                            android:layout_weight="8"
+                            android:layout_marginLeft="20dip"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="80"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dip"
+                            android:text="Accident"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+                            android:id="@+id/tv_total_accident"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_feed__hazard"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:background="@drawable/back_feed">
+
+                        <ImageView
+                            android:src="@drawable/hazard_feed"
+                            android:layout_weight="8"
+                            android:layout_marginLeft="20dip"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="80"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dip"
+                            android:text="Hazards"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+                            android:id="@+id/tv_total_hazard"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip">
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_traafikchat_feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:background="@drawable/back_feed">
+
+                        <ImageView
+                            android:src="@drawable/place_feed"
+                            android:layout_weight="10"
+                            android:layout_marginLeft="15dip"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="80"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dip"
+                            android:text="Place"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_roadclosed_feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:background="@drawable/back_feed">
+
+                        <ImageView
+                            android:src="@drawable/roadclosed_feed"
+                            android:layout_weight="8"
+                            android:layout_marginLeft="20dip"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="80"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dip"
+                            android:text="Road Closed"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+                            android:id="@+id/tv_total_roadclosed"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_checkIn_feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="90"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:background="@drawable/back_feed">
+
+                        <ImageView
+                            android:src="@drawable/check_feed"
+                            android:layout_weight="8"
+                            android:layout_marginLeft="20dip"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="80"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dip"
+                            android:text="Check In"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <com.tuffgeekers.utils.AutoResizeTextView
+                            android:id="@+id/tv_total_checkIN"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:gravity="center_vertical"
+
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
